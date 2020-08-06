@@ -51,9 +51,9 @@ En la pantalla de detalle aparecerá además de la foto, nombre y especie, el pl
 
     Para terminar, podéis realizar algunas mejoras visuales del ejercicio. Por ejemplo:
 
-          🌀Mostrar la especie y si un personajes está muerto con un icono.
-          🌀Usar algún sistema de grid para pintar el listado de personajes.
-          🌀Que funcione bien el responsive en dispositivos pequeños.
+          🌀 Mostrar la especie y si un personajes está muerto con un icono.
+          🌀 Usar algún sistema de grid para pintar el listado de personajes.
+          🌀 Que funcione bien el responsive en dispositivos pequeños.
 
 7.  ### BONUS: URL compartible
 
