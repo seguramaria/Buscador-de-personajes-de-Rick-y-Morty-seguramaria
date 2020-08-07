@@ -9,6 +9,8 @@ const getDataFromApi = () => {
           name: character.name,
           status: character.status,
           species: character.species,
+          origin: character.origin.name,
+          episodes: character.episode.length,
           image: character.image,
         };
       }); //Retornamos los datos con los que vamos a trabajar. Filtraremos aquí directamente los datos si hay un NULL hacer un ternario IMPORTANTE!!!!!!!
