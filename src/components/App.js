@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import '../stylesheets/App.scss';
 import getDataFromApi from '../services/getDataFromApi';
 import CharacterList from '../components/Characters/CharacterList';
-// import CharacterCard from '../components/Characters/CharacterCard';
+import CharacterDetail from './CharacterDetail';
 
 const App = () => {
   // React nos pide que en el primer nivel de componenge creemos un Hook. Pobemos el valor inicial del estado Characters dentro de useState, que será mi array de elementos y setCharacters será nuestra función para actualizar el estado. Resultado: Al arrancar la aplicación, products va a ser un array.
@@ -16,7 +17,28 @@ const App = () => {
     });
   }, []);
 
-  console.log(characters);
+  //Render: código que devuelve código html/jsx.
+  const renderCharacterDetail = (props) => {
+    const routeCharacterId = parseInt(props.match.params.id);
+    const character = characters.find(
+      (character) => character.id === routeCharacterId
+    );
+    if (character) {
+      return (
+        <CharacterDetail
+          name={character.name}
+          image={character.image}
+          species={character.species}
+          gender={character.gender}
+          origin={character.origin}
+          status={character.status}
+        />
+      );
+    } else {
+      return <p>Personaje no encontrado</p>;
+    }
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -24,6 +46,10 @@ const App = () => {
       </header>
       <main>
         <CharacterList characters={characters} />
+        {/* //Pasamos los datos por props */}
+        <Switch>
+          <Route path="/character/:id" render={renderCharacterDetail} />
+        </Switch>
       </main>
     </div>
   );

@@ -1,12 +1,12 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const CharacterCard = (props) => {
   //como viene en inglés, vamos a traducirlo con un condicional:
   const getStatus = () => {
-    if (props.character.status === 'Alive') {
+    if (props.status === 'Alive') {
       return 'Vivo';
-    } else if (props.character.status === 'Dead') {
+    } else if (props.status === 'Dead') {
       return 'Muerto';
     } else {
       return '¿?';
@@ -15,9 +15,9 @@ const CharacterCard = (props) => {
 
   //como viene en inglés, vamos a traducirlo con un condicional:
   const getSpecies = () => {
-    if (props.character.species === 'Human') {
+    if (props.species === 'Human') {
       return 'Humano';
-    } else if (props.character.species === 'Alien') {
+    } else if (props.species === 'Alien') {
       return 'Alien';
     } else {
       return '¿?';
@@ -25,21 +25,22 @@ const CharacterCard = (props) => {
   };
 
   return (
-    <li className="card">
-      {/* <Link to={`/chracter/${props.character.id}`}> */}
+    <li className="card" id={props.id}>
       <img
         className="card__img"
-        src={props.character.image}
-        alt={`Foto de ${props.character.name}`}
+        src={props.image}
+        alt={`Foto de ${props.name}`}
       />
-      <h4 className="card__title">{props.character.name}</h4>
+      <h4 className="card__title">{props.name}</h4>
       <p className="card__description">
         {getSpecies()} / {getStatus()}
       </p>
-      {/* </Link> */}
-      <button className="card__btn">
-        <p>Conoce más sobre {props.character.name}</p>
-      </button>
+
+      <Link to={`/character/${props.id}`}>
+        <button className="card__btn">
+          <p>Conoce más sobre {props.name}</p>
+        </button>
+      </Link>
     </li>
   );
 };
