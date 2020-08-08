@@ -18,7 +18,7 @@ const CharacterCard = (props) => {
     if (props.species === 'Human') {
       return 'Humano';
     } else if (props.species === 'Alien') {
-      return 'Alien';
+      return 'Alienígena';
     } else {
       return '¿?';
     }

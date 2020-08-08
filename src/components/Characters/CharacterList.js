@@ -2,6 +2,7 @@ import React from 'react';
 import CharacterCard from './CharacterCard';
 
 const CharacterList = (props) => {
+  console.log(props);
   //Al haber pasado los datos por props al componente en app.js, aquí los recibimos
   const charactersElements = props.characters.map((character) => {
     //Siempre que recorramos para pintar, debemos usar map
@@ -12,7 +13,7 @@ const CharacterList = (props) => {
         id={character.id}
         name={character.name}
         image={character.image}
-        specie={character.species}
+        species={character.species}
         status={character.status}
       />
     ); //vamos a pasar las props para que cada personaje tenga sus datos
