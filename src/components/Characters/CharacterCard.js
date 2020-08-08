@@ -36,10 +36,8 @@ const CharacterCard = (props) => {
         {getSpecies()} / {getStatus()}
       </p>
 
-      <Link to={`/character/${props.id}`}>
-        <button className="card__btn">
-          <p>Conoce más sobre {props.name}</p>
-        </button>
+      <Link to={`/character/${props.id}`} className="card__btn">
+        <p>Conoce más sobre {props.name}</p>
       </Link>
     </li>
   );
