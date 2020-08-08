@@ -32,7 +32,7 @@ const App = () => {
     // }
   };
 
-  const filteredCharacters = characters.filter((character) => {
+  const renderFilteredCharacters = characters.filter((character) => {
     return character.name.toUpperCase().includes(nameFilter.toUpperCase()); // Tenemos que comparar el nombre del personaje con lo que hayamos escrito en nameFIlter y devolvemos un booleano que nos indica si el personaje en cuestión pasa o no pasa el filtro. Si yo le digo que todos los personajes pasan el filtro (true), me va a pintar los 20 personajes. Si le ponemos false, ningún personaje. Por lo que debemos decirle si es true o false con los filtros. //Usamos un método filter, primer parámetro el personaje(elemenos del array vharacter) que nos devuelve un booleano. Cuanso nameFIlter esté vacío nos devuelve true y aparecen todos los de la lista porque javascript entiende que no texto es texto.
     //Importante!! Usamos el método toUpperCase para que nos busque escribamos el nombre en mayúsculas o minúsculas.
   });
@@ -84,7 +84,7 @@ const App = () => {
         {/* la lista de personajes está en una ruta exacta, por lo que cuando nos pasamos a la ruta variable de los personajes, desaparece el fondo, es decir, CharacterList no aparece en esa parte. Al igual que si no queremos que se vean los filtros */}
         <Route exact path="/">
           <Filters handleFilter={handleFilter} />
-          <CharacterList characters={filteredCharacters} />
+          <CharacterList characters={renderFilteredCharacters} />
         </Route>
 
         {/* //Pasamos los datos por props */}

@@ -10,6 +10,7 @@ const FiltersByName = (props) => {
       key: 'name',
     });
   };
+
   return (
     <>
       <label className="label-name" htmlFor="name">
