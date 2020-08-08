@@ -96,7 +96,11 @@ const App = () => {
             speciesFilter={speciesFilter}
           />
           {/* enviamos el estado nameFilterpor props para que si quiero poner por defecto un estado concreto, se pase por props hasta filtersByname donde asignaremos un value para siempre a sus inputs en el que le diremos que ese value siempre será nameFilter */}
-          <CharacterList characters={filteredCharacters} />
+
+          <CharacterList
+            characters={filteredCharacters}
+            nameFilter={nameFilter}
+          />
         </Route>
 
         {/* //Pasamos los datos por props */}

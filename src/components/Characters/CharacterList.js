@@ -1,5 +1,6 @@
 import React from 'react';
 import CharacterCard from './CharacterCard';
+import NoCharacter from './NoCharacter';
 
 const CharacterList = (props) => {
   console.log(props);
@@ -18,6 +19,11 @@ const CharacterList = (props) => {
       />
     ); //vamos a pasar las props para que cada personaje tenga sus datos
   });
+
+  //Si el array de charactersElements es igual a cero, significa que el nombre introducido en el buscador no es correcto, por lo que añadimos este condicional que mostrará un error.
+  if (charactersElements.length === 0)
+    return <NoCharacter nameFilter={props.nameFilter} />;
+
   return (
     <section>
       <ul className="cards">
