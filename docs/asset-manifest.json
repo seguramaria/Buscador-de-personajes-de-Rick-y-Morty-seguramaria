@@ -1,22 +1,32 @@
 {
   "files": {
-    "main.css": "./static/css/main.5f361e03.chunk.css",
-    "main.js": "./static/js/main.4959f24e.chunk.js",
-    "main.js.map": "./static/js/main.4959f24e.chunk.js.map",
+    "main.css": "./static/css/main.c4eb7182.chunk.css",
+    "main.js": "./static/js/main.bd1f58ff.chunk.js",
+    "main.js.map": "./static/js/main.bd1f58ff.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.1d9e3bf8.js",
     "runtime-main.js.map": "./static/js/runtime-main.1d9e3bf8.js.map",
-    "static/js/2.f6990b46.chunk.js": "./static/js/2.f6990b46.chunk.js",
-    "static/js/2.f6990b46.chunk.js.map": "./static/js/2.f6990b46.chunk.js.map",
+    "static/js/2.33eee1f2.chunk.js": "./static/js/2.33eee1f2.chunk.js",
+    "static/js/2.33eee1f2.chunk.js.map": "./static/js/2.33eee1f2.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.69e7b788690805008a9f1398bbdab924.js": "./precache-manifest.69e7b788690805008a9f1398bbdab924.js",
+    "precache-manifest.ca80a65865ef1d0fda79a8c4911e485c.js": "./precache-manifest.ca80a65865ef1d0fda79a8c4911e485c.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "./static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.f6990b46.chunk.js.LICENSE.txt": "./static/js/2.f6990b46.chunk.js.LICENSE.txt"
+    "static/css/main.c4eb7182.chunk.css.map": "./static/css/main.c4eb7182.chunk.css.map",
+    "static/js/2.33eee1f2.chunk.js.LICENSE.txt": "./static/js/2.33eee1f2.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "./static/media/Diseño sin título (2).84f8b850.png",
+    "static/media/einstein.svg": "./static/media/einstein.04691b45.svg",
+    "static/media/monster.svg": "./static/media/monster.0bed64db.svg",
+    "static/media/no-morty.gif": "./static/media/no-morty.1af6fa9b.gif",
+    "static/media/Characters.scss": "./static/media/portal-vector2.5b537363.png",
+    "static/media/rickmortyanimation.gif": "./static/media/rickmortyanimation.7df79bcd.gif",
+    "static/media/title.png": "./static/media/title.ca355fba.png",
+    "static/media/unknown.svg": "./static/media/unknown.3769c6b7.svg",
+    "static/media/Landing.scss": "./static/media/wallpaper-portal.32adee4d.jpg",
+    "static/media/wallpaper-stars-2.png": "./static/media/wallpaper-stars-2.5656a47e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1d9e3bf8.js",
-    "static/js/2.f6990b46.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.4959f24e.chunk.js"
+    "static/js/2.33eee1f2.chunk.js",
+    "static/css/main.c4eb7182.chunk.css",
+    "static/js/main.bd1f58ff.chunk.js"
   ]
 }
