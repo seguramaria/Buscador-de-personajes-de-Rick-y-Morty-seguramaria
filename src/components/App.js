@@ -4,7 +4,9 @@ import '../stylesheets/App.scss';
 import getDataFromApi from '../services/getDataFromApi';
 import Filters from '../components/Filters/Filters';
 import CharacterList from '../components/Characters/CharacterList';
-import CharacterDetail from './CharacterDetail';
+import CharacterDetail from './Characters/CharacterDetail';
+import Landing from './Langing';
+import Footer from './Footer';
 
 const App = () => {
   // React nos pide que en el primer nivel de componenge creemos un Hook. Pobemos el valor inicial del estado Characters dentro de useState, que será mi array de elementos y setCharacters será nuestra función para actualizar el estado. Resultado: Al arrancar la aplicación, products va a ser un array.
@@ -32,12 +34,19 @@ const App = () => {
     }
   };
 
+  // Organizar los personajes por orden alfabético
+  characters.sort(function (a, b) {
+    if (a.name < b.name) return -1;
+    if (a.name > b.name) return 1;
+    return 0;
+  });
+
   const filteredCharacters = characters
     .filter((character) => {
       return character.name.toUpperCase().includes(nameFilter.toUpperCase());
     })
     .filter((character) => {
-      console.log(character.species);
+      // console.log(character.species);
       if (speciesFilter === 'all') {
         return true;
       } else {
@@ -83,13 +92,12 @@ const App = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Rick y Morty </h1>
-      </header>
-
       <Switch>
-        {/* la lista de personajes está en una ruta exacta, por lo que cuando nos pasamos a la ruta variable de los personajes, desaparece el fondo, es decir, CharacterList no aparece en esa parte. Al igual que si no queremos que se vean los filtros */}
         <Route exact path="/">
+          <Landing />
+        </Route>
+        {/* la lista de personajes está en una ruta exacta, por lo que cuando nos pasamos a la ruta variable de los personajes, desaparece el fondo, es decir, CharacterList no aparece en esa parte. Al igual que si no queremos que se vean los filtros */}
+        <Route exact path="/App">
           <Filters
             handleFilter={handleFilter}
             nameFilter={nameFilter}
@@ -101,6 +109,7 @@ const App = () => {
             characters={filteredCharacters}
             nameFilter={nameFilter}
           />
+          <Footer />
         </Route>
 
         {/* //Pasamos los datos por props */}

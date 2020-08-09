@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../stylesheets/Filters.scss';
 
 // En props va a recibir la función de su abuela (app.js) que se la ha pasado su madre por props (filters.js)
 const FilterByName = (props) => {

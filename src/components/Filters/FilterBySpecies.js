@@ -1,7 +1,7 @@
 import React from 'react';
+import '../../stylesheets/Filters.scss';
 
 const FilterBySpecies = (props) => {
-  console.log(props);
   const handleChange = (ev) => {
     props.handleFilter({
       key: 'species',
@@ -18,7 +18,7 @@ const FilterBySpecies = (props) => {
         id="species"
         name="species"
         className="form__input-text"
-        value={props.filterSpecies}
+        value={props.speciesFilter}
         onChange={handleChange}
       >
         <option value="all">Todos</option>

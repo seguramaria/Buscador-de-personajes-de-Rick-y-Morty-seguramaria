@@ -1,9 +1,11 @@
 import React from 'react';
+
 import CharacterCard from './CharacterCard';
 import NoCharacter from './NoCharacter';
+import '../../stylesheets/Characters.scss';
 
 const CharacterList = (props) => {
-  console.log(props);
+  // console.log(props);
   //Al haber pasado los datos por props al componente en app.js, aquí los recibimos
   const charactersElements = props.characters.map((character) => {
     //Siempre que recorramos para pintar, debemos usar map

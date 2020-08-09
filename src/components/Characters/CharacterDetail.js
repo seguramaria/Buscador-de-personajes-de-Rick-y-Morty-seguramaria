@@ -1,19 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../../stylesheets/Characters.scss';
 
 const CharacterDetail = (props) => {
   const handleModalContentClick = (ev) => {
     ev.preventDefault();
   };
   return (
-    <Link to="/">
+    <Link to="/App">
       <div className="modal">
         <div className="modal__dialog">
           {/* todo el contenido del modal tiene un prevent default que hace que no se dirija a la home al clicar */}
           <div className="modal__content" onClick={handleModalContentClick}>
             <header className="modal__header">
               <h2 className="modal__title">{props.name}</h2>
-              <Link to="/">
+              <Link to="/App">
                 <span className="modal__close icon fas fa-times"></span>
               </Link>
             </header>
