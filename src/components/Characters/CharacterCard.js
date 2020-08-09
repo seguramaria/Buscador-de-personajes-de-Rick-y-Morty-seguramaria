@@ -1,44 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../stylesheets/Characters.scss';
+import HumanIcon from '../../images/einstein.svg';
+import AlienIcon from '../../images/monster.svg';
+import UnknownIcon from '../../images/unknown.svg';
 
 const CharacterCard = (props) => {
-  //como viene en inglés, vamos a traducirlo con un condicional:
-  const getStatus = () => {
-    if (props.status === 'Alive') {
-      return 'Vivo';
-    } else if (props.status === 'Dead') {
-      return 'Muerto';
-    } else {
-      return '¿?';
-    }
-  };
-
-  //como viene en inglés, vamos a traducirlo con un condicional:
+  //voy a cambiar el resultado de la especie poniendo un icono con un condicional:
   const getSpecies = () => {
     if (props.species === 'Human') {
-      return 'Humano';
+      return HumanIcon;
     } else if (props.species === 'Alien') {
-      return 'Alienígena';
+      return AlienIcon;
     } else {
-      return '¿?';
+      return UnknownIcon;
     }
   };
-
+  console.log(getSpecies());
   return (
-    <Link to={`/character/${props.id}`} className="card__btn">
-      <li className="card" id={props.id}>
-        <img
-          className="card__img"
-          src={props.image}
-          alt={`Foto de ${props.name}`}
-        />
-        <h4 className="card__title">{props.name}</h4>
-        <p className="card__description">
-          {getSpecies()} / {getStatus()}
-        </p>
-
-        <p>Conoce más sobre {props.name}</p>
+    <Link to={`/character/${props.id}`} className="charactercard">
+      <li className="charactercard" id={props.id}>
+        <div className="charactercard__img-container">
+          <img
+            className="charactercard__img"
+            src={props.image}
+            alt={`Foto de ${props.name}`}
+          />
+        </div>
+        <div className="charactercard__description">
+          <h4 className="charactercard__title">{props.name}</h4>
+          <div className="charactercard__icon-container">
+            <img
+              clasName="charactercard__icon"
+              src={getSpecies()}
+              alt="Especie"
+            ></img>
+          </div>
+        </div>
       </li>
     </Link>
   );

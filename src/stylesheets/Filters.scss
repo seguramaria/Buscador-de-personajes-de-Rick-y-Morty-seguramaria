@@ -1,0 +1,94 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+// FILTERBYNAME
+.label-name {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+.input-name {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  &::placeholder {
+    color: grey;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 0.85rem;
+  }
+  &:hover {
+    border: 3px solid greenyellow;
+    -webkit-box-shadow: 2px 2px 15px 2px rgba(20, 255, 71, 1);
+    -moz-box-shadow: 2px 2px 37px 2px rgba(20, 255, 71, 1);
+    box-shadow: 2px 2px 37px 2px rgba(20, 255, 71, 1);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+// FILTERBYSPECIES
+.label-species {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+.select-species {
+  margin-left: 30px;
+  font-family: 'Architects Daughter', cursive;
+  color: grey;
+  font-size: 0.85rem;
+  box-sizing: border-box;
+  width: 200px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  &:hover {
+    border: 3px solid greenyellow;
+    -webkit-box-shadow: 2px 2px 15px 2px rgba(20, 255, 71, 1);
+    -moz-box-shadow: 2px 2px 37px 2px rgba(20, 255, 71, 1);
+    box-shadow: 2px 2px 37px 2px rgba(20, 255, 71, 1);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+
+  // FILTERBYNAME
+  .label-name {
+    margin: 0;
+  }
+  .input-name {
+    margin-right: 20px;
+  }
+
+  // FILTERBYSPECIES
+  .select-species {
+    margin-left: 30px;
+    font-family: 'Architects Daughter', cursive;
+  }
+  .label-species {
+    margin: 0;
+    margin-left: 20px;
+  }
+}

@@ -11,13 +11,13 @@ const FilterBySpecies = (props) => {
 
   return (
     <>
-      <label htmlFor="species" className="form__label ">
+      <label htmlFor="species" className="label-species ">
         Filtrar por especie
       </label>
       <select
         id="species"
         name="species"
-        className="form__input-text"
+        className="select-species"
         value={props.speciesFilter}
         onChange={handleChange}
       >

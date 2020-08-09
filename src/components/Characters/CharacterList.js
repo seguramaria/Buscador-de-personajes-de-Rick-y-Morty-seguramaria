@@ -27,12 +27,10 @@ const CharacterList = (props) => {
     return <NoCharacter nameFilter={props.nameFilter} />;
 
   return (
-    <section>
-      <ul className="cards">
-        {charactersElements}
-        {/* //pintamos el array recorrido */}
-      </ul>
-    </section>
+    <ul className="characterlist">
+      {charactersElements}
+      {/* //pintamos el array recorrido */}
+    </ul>
   );
 };
 

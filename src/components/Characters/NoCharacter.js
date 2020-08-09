@@ -1,11 +1,12 @@
 import React from 'react';
 import '../../stylesheets/Characters.scss';
+import ImageNotFound from '../../images/no-morty.gif';
 
 const NoCharacter = (props) => {
   return (
-    <section>
-      <p>El nombre {props.nameFilter} no coincide con ningún personaje</p>
-      {/* <img src="https://steamuserimages-a.akamaihd.net/ugc/920290553152905607/4FD2AF939C0C9923B8B9DD9A7C65E9C6C145CF3A/"></img> */}
+    <section className="no-character">
+      <p>El nombre "{props.nameFilter}"" no coincide con ningún personaje</p>
+      <img src={ImageNotFound} alt="No se ha encontrado el personaje"></img>
     </section>
   );
 };

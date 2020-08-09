@@ -5,8 +5,9 @@ import getDataFromApi from '../services/getDataFromApi';
 import Filters from '../components/Filters/Filters';
 import CharacterList from '../components/Characters/CharacterList';
 import CharacterDetail from './Characters/CharacterDetail';
-import Landing from './Langing';
-import Footer from './Footer';
+import Landing from './Landing';
+import Header from './Header';
+// import Footer from './Footer';
 
 const App = () => {
   // React nos pide que en el primer nivel de componenge creemos un Hook. Pobemos el valor inicial del estado Characters dentro de useState, que será mi array de elementos y setCharacters será nuestra función para actualizar el estado. Resultado: Al arrancar la aplicación, products va a ser un array.
@@ -91,25 +92,28 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className="app">
       <Switch>
         <Route exact path="/">
           <Landing />
         </Route>
         {/* la lista de personajes está en una ruta exacta, por lo que cuando nos pasamos a la ruta variable de los personajes, desaparece el fondo, es decir, CharacterList no aparece en esa parte. Al igual que si no queremos que se vean los filtros */}
         <Route exact path="/App">
+          <Header />
           <Filters
             handleFilter={handleFilter}
             nameFilter={nameFilter}
             speciesFilter={speciesFilter}
           />
-          {/* enviamos el estado nameFilterpor props para que si quiero poner por defecto un estado concreto, se pase por props hasta filtersByname donde asignaremos un value para siempre a sus inputs en el que le diremos que ese value siempre será nameFilter */}
 
-          <CharacterList
-            characters={filteredCharacters}
-            nameFilter={nameFilter}
-          />
-          <Footer />
+          {/* enviamos el estado nameFilterpor props para que si quiero poner por defecto un estado concreto, se pase por props hasta filtersByname donde asignaremos un value para siempre a sus inputs en el que le diremos que ese value siempre será nameFilter */}
+          <main className="main">
+            <CharacterList
+              characters={filteredCharacters}
+              nameFilter={nameFilter}
+            />
+          </main>
+          {/* <Footer className="footer" /> */}
         </Route>
 
         {/* //Pasamos los datos por props */}

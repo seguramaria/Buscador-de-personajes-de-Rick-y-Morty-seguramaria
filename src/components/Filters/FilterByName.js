@@ -18,6 +18,7 @@ const FilterByName = (props) => {
         Filtrar por nombre:
       </label>
       <input
+        placeholder="Ej: Morty"
         className="input-name"
         type="text"
         name="name"
