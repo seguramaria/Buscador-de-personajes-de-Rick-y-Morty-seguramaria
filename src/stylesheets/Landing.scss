@@ -1,19 +1,18 @@
 .landing {
-  background-image: url('../images/wallpaper-portal.jpg');
+  background-image: url('../images/o2iEmS\ \(1\).jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-
+  height: 100vh;
   &__header {
     margin: 50px;
     text-align: center;
-    height: 100vh;
   }
   &__title {
     width: 25rem;

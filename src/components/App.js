@@ -7,7 +7,7 @@ import CharacterList from '../components/Characters/CharacterList';
 import CharacterDetail from './Characters/CharacterDetail';
 import Landing from './Landing';
 import Header from './Header';
-// import Footer from './Footer';
+import PageNotFound from './PageNotFound';
 
 const App = () => {
   // React nos pide que en el primer nivel de componenge creemos un Hook. Pobemos el valor inicial del estado Characters dentro de useState, que será mi array de elementos y setCharacters será nuestra función para actualizar el estado. Resultado: Al arrancar la aplicación, products va a ser un array.
@@ -87,7 +87,7 @@ const App = () => {
         />
       );
     } else {
-      return <p>Personaje no encontrado</p>;
+      return <PageNotFound />;
     }
   };
 

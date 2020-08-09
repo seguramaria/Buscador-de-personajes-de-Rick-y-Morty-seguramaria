@@ -48,6 +48,7 @@
   &__title {
     font-family: 'Chelsea Market', cursive;
     color: honeydew;
+    text-shadow: 1px 1px 1px #333;
     text-align: center;
     padding: 5px 15px;
     margin: auto;
@@ -83,6 +84,7 @@
   box-sizing: border-box;
   max-width: 1200px;
   margin: auto;
+
   &__link {
     text-decoration: none;
   }
@@ -101,8 +103,38 @@
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
     color: white;
-    background-color: #9fff18;
+    background-color: #4f7816;
+
+    -webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
+
+  @-webkit-keyframes tilt-in-top-1 {
+    0% {
+      -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+      transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+      transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes tilt-in-top-1 {
+    0% {
+      -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+      transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+      transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
+
   &__img {
     width: 100%;
     object-fit: center;
@@ -118,15 +150,24 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    background-color: rgb(36, 193, 218);
-    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     width: 100%;
   }
   &__title {
     text-align: center;
     font-size: 1.25rem;
+    text-shadow: 1px 1px 1px #333;
     width: 225px;
+    margin: auto;
+    padding: 5px 0;
+    min-height: 40px;
+    background-color: rgb(47, 255, 217);
+    background-image: linear-gradient(120deg, #9fff18 50%, #18c2cb6b 100%);
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
+
   &__close {
     width: 200px;
     display: flex;
@@ -147,26 +188,31 @@
     margin: auto;
     padding: 0;
     width: 225px;
+    background-color: rgb(112, 236, 214);
+    background-image: linear-gradient(200deg, #6e6f6b 50%, #5296986b 100%);
+    border-bottom-right-radius: 40px;
     &-li {
       display: flex;
       justify-content: center;
       align-items: center;
 
       &-span-1 {
-        background-color: rgb(21, 56, 49);
-        border-bottom: 1px solid #9fff18;
+        box-sizing: border-box;
+        background-color: rgb(20, 22, 22);
+
         width: 100px;
-        height: 40px;
+        height: 52px;
         padding: 5px;
       }
       &-span-2 {
+        box-sizing: border-box;
         background-color: rgb(112, 236, 214);
-        background-image: linear-gradient(200deg, #9fff18 50%, #5296986b 100%);
+        background-image: linear-gradient(200deg, #6e6f6b 50%, #589b146b 100%);
         border-bottom-right-radius: 40px;
         font-weight: bold;
         color: black;
         width: 125px;
-        height: 40px;
+        height: 52px;
         padding: 5px;
         text-align: center;
       }
@@ -177,31 +223,36 @@
 @media all and (min-width: 768px) {
   .modal {
     &__dialog {
-      padding-top: 10px;
+      padding-top: 50px;
     }
     &__content {
       margin: auto;
-      width: 500px;
-    }
-    &__header {
+      width: 400px;
+      height: 400px;
+      display: flex;
       flex-direction: row;
-
-      background-image: url('../images/portal-vector2.png');
-      background-position: center;
-      background-size: cover;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
     }
+
     &__img {
       &-container {
-        width: 310px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
       }
     }
 
     &__title {
-      font-size: 1.6rem;
-      width: 185px;
-      padding: 10px;
-      text-align: left;
+      font-size: 1.3rem;
+      width: 200px;
+      box-sizing: border-box;
+      padding: 20px;
+      text-align: center;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     &__close {
       width: 300px;
@@ -219,17 +270,19 @@
       }
     }
     &__ul {
-      width: 500px;
+      width: 200px;
+      height: 400px;
+
       &-li {
         &-span-1 {
-          padding-left: 20px;
-          width: 120px;
-          height: 42px;
+          padding: 10px;
+          width: 80px;
+          height: 80px;
         }
         &-span-2 {
-          padding-right: 20px;
-          width: 480px;
-          height: 42px;
+          padding: 10px;
+          width: 120px;
+          height: 80px;
         }
       }
     }
@@ -240,6 +293,7 @@
 .no-character {
   width: 200px;
   margin: auto;
+  margin-top: 20px;
   text-align: right;
   background-color: rgb(35, 37, 44);
   border-radius: 25px;
@@ -253,5 +307,28 @@
   }
   p {
     margin: 20px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .no-character {
+    width: 400px;
+    font-size: 1.5rem;
+    margin: auto;
+    margin-top: 20px;
+    text-align: right;
+    background-color: rgb(35, 37, 44);
+    border-radius: 25px;
+    padding-top: 3px;
+    img {
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 170px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+    p {
+      margin: 20px;
+    }
   }
 }
