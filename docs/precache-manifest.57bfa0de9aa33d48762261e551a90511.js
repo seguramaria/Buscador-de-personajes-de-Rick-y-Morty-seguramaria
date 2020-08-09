@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "acf9c13f236a6fa010b099496b9d16e6",
+    "revision": "0bbffe473c9d04dad248a68e32bfcf19",
     "url": "./index.html"
   },
   {
-    "revision": "1811d9ce782aefa1bc14",
-    "url": "./static/css/main.c4eb7182.chunk.css"
+    "revision": "67a17a222da9fe389d35",
+    "url": "./static/css/main.4e483695.chunk.css"
   },
   {
-    "revision": "b2cd561aa80e16a6eca9",
-    "url": "./static/js/2.33eee1f2.chunk.js"
+    "revision": "6fad4155163bc16666a6",
+    "url": "./static/js/2.87db1c35.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "./static/js/2.33eee1f2.chunk.js.LICENSE.txt"
+    "url": "./static/js/2.87db1c35.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1811d9ce782aefa1bc14",
-    "url": "./static/js/main.bd1f58ff.chunk.js"
+    "revision": "67a17a222da9fe389d35",
+    "url": "./static/js/main.f065e5b1.chunk.js"
   },
   {
     "revision": "2e05711df76aa5c67ffb",
@@ -40,8 +40,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/no-morty.1af6fa9b.gif"
   },
   {
-    "revision": "5b537363393dc26c68b566fe482eb32d",
-    "url": "./static/media/portal-vector2.5b537363.png"
+    "revision": "47a5803f74c821967a675a4454303d8b",
+    "url": "./static/media/o2iEmS (1).47a5803f.jpg"
+  },
+  {
+    "revision": "e47c74168e3fab72df4c133589484b37",
+    "url": "./static/media/rick-not-found.e47c7416.gif"
   },
   {
     "revision": "7df79bcdd507bda740e239343690b0bc",
@@ -54,10 +58,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3769c6b78d6eb406bfee6f1da5cdf785",
     "url": "./static/media/unknown.3769c6b7.svg"
-  },
-  {
-    "revision": "32adee4da227eedb69190ff664cc9eb3",
-    "url": "./static/media/wallpaper-portal.32adee4d.jpg"
   },
   {
     "revision": "5656a47e609ee277afa11507c7fd284b",
