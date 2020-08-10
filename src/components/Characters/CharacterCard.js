@@ -19,7 +19,7 @@ const CharacterCard = (props) => {
   console.log(getSpecies());
   return (
     <Link to={`/character/${props.id}`} className="charactercard">
-      <li className="charactercard" id={props.id}>
+      <li className="charactercard__li" id={props.id}>
         <div className="charactercard__img-container">
           <img
             className="charactercard__img"
