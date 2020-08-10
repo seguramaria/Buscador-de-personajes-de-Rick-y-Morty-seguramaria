@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import '../../stylesheets/Characters.scss';
 import HumanIcon from '../../images/einstein.svg';
 import AlienIcon from '../../images/monster.svg';
@@ -40,6 +41,13 @@ const CharacterCard = (props) => {
       </li>
     </Link>
   );
+};
+
+CharacterCard.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  specie: PropTypes.string,
+  img: PropTypes.string,
 };
 
 export default CharacterCard;

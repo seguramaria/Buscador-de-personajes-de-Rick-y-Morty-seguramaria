@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../../stylesheets/Filters.scss';
 
 const FilterByName = (props) => {
@@ -26,6 +27,13 @@ const FilterByName = (props) => {
       />
     </>
   );
+};
+
+FilterByName.propTypes = {
+  value: PropTypes.string,
+  inputSearch: PropTypes.func,
+  orderCharacters: PropTypes.bool,
+  orderCheck: PropTypes.func,
 };
 
 export default FilterByName;

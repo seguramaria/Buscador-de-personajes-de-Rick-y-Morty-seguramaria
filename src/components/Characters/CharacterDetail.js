@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import '../../stylesheets/Characters.scss';
 import ImageHome from '../../images/rickmortyanimation.gif';
 
@@ -100,6 +101,17 @@ const CharacterDetail = (props) => {
       </div>
     </Link>
   );
+};
+
+CharacterDetail.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  species: PropTypes.string,
+  gender: PropTypes.string,
+  status: PropTypes.string,
+  image: PropTypes.string,
+  origin: PropTypes.object,
+  episode: PropTypes.array,
 };
 
 export default CharacterDetail;

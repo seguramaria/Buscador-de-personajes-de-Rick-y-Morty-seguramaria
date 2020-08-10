@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import CharacterCard from './CharacterCard';
 import NoCharacter from './NoCharacter';
 import '../../stylesheets/Characters.scss';
@@ -28,6 +29,10 @@ const CharacterList = (props) => {
       {/* //pintamos el array recorrido */}
     </ul>
   );
+};
+
+CharacterList.propTypes = {
+  data: PropTypes.array,
 };
 
 export default CharacterList;
