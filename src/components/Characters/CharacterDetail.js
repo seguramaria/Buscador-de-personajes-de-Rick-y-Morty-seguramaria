@@ -2,12 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../stylesheets/Characters.scss';
 import ImageHome from '../../images/rickmortyanimation.gif';
+
 const CharacterDetail = (props) => {
+  //PREVENT DEFAULT
   const handleModalContentClick = (ev) => {
     ev.preventDefault();
   };
 
-  //como viene en inglés y el público de nuestra página es español, vamos a traducirlo con un condicional:
+  //TRADUCCIONES:
   const getStatus = () => {
     if (props.status === 'Alive') {
       return 'Vivo';

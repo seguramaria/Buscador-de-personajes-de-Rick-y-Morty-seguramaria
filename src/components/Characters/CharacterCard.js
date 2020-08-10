@@ -6,7 +6,7 @@ import AlienIcon from '../../images/monster.svg';
 import UnknownIcon from '../../images/unknown.svg';
 
 const CharacterCard = (props) => {
-  //voy a cambiar el resultado de la especie poniendo un icono con un condicional:
+  //Cambio el resultado de la especie por un icono con un condicional:
   const getSpecies = () => {
     if (props.species === 'Human') {
       return HumanIcon;
@@ -16,7 +16,7 @@ const CharacterCard = (props) => {
       return UnknownIcon;
     }
   };
-  console.log(getSpecies());
+
   return (
     <Link to={`/character/${props.id}`} className="charactercard">
       <li className="charactercard__li" id={props.id}>
