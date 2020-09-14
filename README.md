@@ -55,9 +55,9 @@ En la pantalla de detalle aparecerá además de la foto, nombre y especie, el pl
           🌀 Diseño responsive
           Diseño responsive:
 
-    <img src="https://raw.githubusercontent.com/seguramaria/Buscador-de-personajes-de-Rick-y-Morty-seguramaria/src/images/responsive/16.png" width="200"/>
-    <img src="https://raw.githubusercontent.com/seguramaria/Buscador-de-personajes-de-Rick-y-Morty-seguramaria/src/images/responsive/17.png" width="200"/>
-    <img src="https://raw.githubusercontent.com/seguramaria/Buscador-de-personajes-de-Rick-y-Morty-seguramaria/src/images/responsive/18.png" width="200"/>
+    <img src="https://raw.githubusercontent.com/seguramaria/Buscador-de-personajes-de-Rick-y-Morty-seguramaria/src/images/responsive/4.png" width="200"/>
+    <img src="https://raw.githubusercontent.com/seguramaria/Buscador-de-personajes-de-Rick-y-Morty-seguramaria/src/images/responsive/5.png" width="200"/>
+    <img src="https://raw.githubusercontent.com/seguramaria/Buscador-de-personajes-de-Rick-y-Morty-seguramaria/src/images/responsive/6.png" width="200"/>
 
 7.  ### URL compartible
 
@@ -68,6 +68,5 @@ La URL del detalle de personaje es compartible, es decir, que si visitamos esa U
 El listado de personajes se ordena alfabéticamente por nombre.
 
 Enlace a GitHub Pages para ver el resultado: http://beta.adalab.es/modulo-3-evaluacion-final-seguramaria/#/
-
 
 #### Wubba Lubba Dub Dub!!
