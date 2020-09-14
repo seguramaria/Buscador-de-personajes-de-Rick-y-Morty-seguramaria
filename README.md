@@ -53,8 +53,7 @@ En la pantalla de detalle aparecerá además de la foto, nombre y especie, el pl
           🌀 Mostrar la especie de un personaje lo hacemos con un icono.
           🌀 Uso de sistema de grid para pintar el listado de personajes.
           🌀 Diseño responsive
-   
-   
+
 <img src="https://raw.githubusercontent.com/seguramaria/Buscador-de-personajes-de-Rick-y-Morty-seguramaria/src/images/responsive/4.png" width="200"/>
 <img src="https://raw.githubusercontent.com/seguramaria/Buscador-de-personajes-de-Rick-y-Morty-seguramaria/src/images/responsive/5.png" width="200"/>
 <img src="https://raw.githubusercontent.com/seguramaria/Buscador-de-personajes-de-Rick-y-Morty-seguramaria/src/images/responsive/6.png" width="200"/>
