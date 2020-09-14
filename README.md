@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/seguramaria/GitHub/Buscador-de-personajes-de-Rick-y-Morty-seguramaria/master/src/images/1.png" width="350"/>
+<img src="https://raw.githubusercontent.com/seguramaria/Buscador-de-personajes-de-Rick-y-Morty-seguramaria/master/src/images/1.png" width="350"/>
 
 # Buscador de personajes de Rick y Morty 👽🚀
 
@@ -62,6 +62,5 @@ La URL del detalle de personaje es compartible, es decir, que si visitamos esa U
 
 El listado de personajes se ordena alfabéticamente por nombre.
 
-Enlace a GitHub Pages para ver el resultado: http://beta.adalab.es/modulo-3-evaluacion-intermedia-seguramaria/
-
-    Wubba Lubba Dub Dub!!
+Enlace a GitHub Pages para ver el resultado: http://beta.adalab.es/modulo-3-evaluacion-final-seguramaria/#/
+Wubba Lubba Dub Dub!!
